@@ -1,12 +1,26 @@
 server:
+<<<<<<< HEAD
   port: 8761
 
+=======
+  #from server config is 8707
+  port: 8706
+>>>>>>> 4894b9868fb228949acf9f0a5b96daa23780fe02
 spring:
   application:
     name: skt-ms-discovery
 
 eureka:
+<<<<<<< HEAD
   client:
     registerWithEureka: false
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+=======
+  config:
+    import: optional:file:.env[.properties]
+  client:
+    registerWithEureka: false
+    serviceUrl:
+      defaultZone: ${EUREKA_URL}
+>>>>>>> 4894b9868fb228949acf9f0a5b96daa23780fe02
