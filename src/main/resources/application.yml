@@ -12,3 +12,6 @@ eureka:
     registerWithEureka: false
     serviceUrl:
       defaultZone: ${EUREKA_URL:http://localhost:8707/eureka/}
+
+custom-config:
+  logs-uri: ${LOGS_URI}
